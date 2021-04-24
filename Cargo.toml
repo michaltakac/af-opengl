@@ -1,0 +1,26 @@
+[package]
+name = "af-to-texture"
+version = "0.1.0"
+description = "Using ArrayFire with OpenGL textures"
+authors = ["Michal Takac <takacmichal92@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.90"
+arrayfire = "3.8"
+af-opencl-interop = "3.7.1"
+ocl = "0.19"
+ocl-core = "0.11.2"
+ocl-interop = "0.1"
+glium = "0.29.1"
+gl = "0.14.0"
+takeable-option = "0.5.0"
+image = "*"
+
+[[example]]
+name = "cpu" # examples/af_cpu_texture.rs
+path = "examples/af_cpu_texture.rs"
+
+[[example]]
+name = "gpu" # examples/af_opencl_texture.rs
+path = "examples/af_opencl_texture.rs"
